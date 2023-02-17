@@ -31,16 +31,16 @@
 		"client_id":"1091139802016795840",
 		"client_secret":"C1F6BBBEDF9908ED883E732DE94FD494EEE7A978BD0C714AF0250694CBCC9448",
 		"project_id":"460463478583334909",
-		"app_id":"107688021",
+		"app_id":"107707359",
 		"api_key":"DAEDAFV+BMpQzW1Trj9XBZ3b8PVr+z0eLWfp1uxEJrLqsaZJg4/j9cI4N8Va/Q60eI3R9kutDIRPvpU8FhlZVLEqb7zOr8+s2Td9ag==",
 		"package_name":"com.example.my_test_notification"
 	},
 	"oauth_client":{
-		"client_id":"107688021",
+		"client_id":"107707359",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"107688021",
+		"app_id":"107707359",
 		"package_name":"com.example.my_test_notification"
 	},
 	"service":{
@@ -81,15 +81,15 @@
 		{
 			"package_name":"com.example.my_test_notification",
 			"client":{
-				"app_id":"107688021"
+				"app_id":"107707359"
 			},
 			"app_info":{
 				"package_name":"com.example.my_test_notification",
-				"app_id":"107688021"
+				"app_id":"107707359"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"107688021"
+				"client_id":"107707359"
 			}
 		}
 	]

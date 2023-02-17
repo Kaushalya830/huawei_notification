@@ -71,8 +71,8 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.huawei.agconnect:agconnect-core:1.6.0.300'
-    implementation 'com.huawei.hms:push:6.7.0.300'
+    implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+    implementation 'com.huawei.hms:push:6.9.0.300'
     implementation 'com.huawei.hms:hianalytics:6.8.0.300'
     
 }

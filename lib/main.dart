@@ -6,7 +6,9 @@ import 'package:flutter/services.dart';
 import 'package:huawei_push/huawei_push.dart';
 // import 'package:test_notification/new.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Push.setAutoInitEnabled(true);
   runApp(const MyApp());
 }
 

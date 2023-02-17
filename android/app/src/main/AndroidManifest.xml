@@ -4,6 +4,19 @@
         android:label="test_notification"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+    <service
+    android:name="com.huawei.hms.push.remote.service.PushService"
+    android:exported="false"
+    android:label="PushService" />
+
+    <receiver
+    android:name="com.huawei.hms.push.HmsPushReceiver"
+    android:exported="true"
+    android:enabled="true">
+    <intent-filter>
+        <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+    </intent-filter>
+</receiver>
         
         <activity
             android:name=".MainActivity"
@@ -17,18 +30,25 @@
                  the Android process has started. This theme is visible to the user
                  while the Flutter UI initializes. After that, this theme continues
                  to determine the Window background behind the Flutter UI. -->
+            <meta-data 
+              android:name="push_kit_auto_init_enabled"
+              android:value="true"
+              />
+            <meta-data
+                android:name="com.huawei.hms.client.com.example.my_test_notification"
+                android:value="com.example.my_test_notification" />
+
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               />
-              <meta-data 
+            <meta-data 
               android:name="install_channel"
               android:value="AppGallery"
               />
-              <meta-data 
-              android:name="push_kit_auto_init_enabled"
-              android:value="true"
-              />
+           
+              
+              
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name ="com.huawei.push.action.MESSAGING_EVENT"/>
